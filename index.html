@@ -9,11 +9,76 @@
     <!-- Document Content -->
     <header>
         <h1>HTML Week 4 - Images, Links, Forms, and Tables</h1>
+        <hr>
+        <nav>
+          <a href="about.html">About</a> 
+          <a href="#cats">Cats</a>
+        </nav>
+        <hr>
     </header>
     <main>
-<img src="images/kitten.jpg" alt="a very cute kitten" width="500" title="a very cute kitten">
+<img src="images/kitten.jpg" alt="a very cute kitten" width="1000" title="a very cute kitten">
+
+<article id=cats>
+  <a href="http://google.cat" target="_blank">Google</a>
+</article>
+<article>
+  <p>Best things about cats</p>
+  <ul>
+    <li>Soft</li>
+    <li>Cute</li>
+    <li>Cuddly</li>
+  </ul>
+  <hr>
+</article>
+<form action="index.html" method="GET">
+  <p>
+    <label for="username"> Name: </label>
+    <input id="username" type="text" placeholder="John Doe">
+</p>
+<p>
+  <label for="pass">Password: </label>
+  <input id="pass" type="password">
+</p>
+<p>
+  <label for="col">Pick a colour: </label>
+  <input id="col" type="color">
+</p>
+<p>
+  <label for="num">Pick a number: </label>
+  <input id="num" type="range" name="num" value="4">
+</p>
+<p>
+  <label for="info">Enter the Info:</label>
+  <textarea id="info" name="info"></textarea>
+</p>
+<p>
+  <label for="fruit">Pick a fruit: </label>
+  <select id="fruit" name="fruit">
+    <option>Choose from the list below</option>
+    <option>Banana</option>
+    <option>Grape</option>
+    <option>Orange</option>
+  </select>
+</p>
+<p>
+  <label for="spam">Spam me: </label>
+  <input type="checkbox" id="spam" name="spam" checked>
+</p>
+<p>
+  <span>What is the best type of cat: </span>
+  <label for="yes">Yes</label>
+  <input type="radio" id="yes"  name="cats">
+  <label for="no">No</label>
+  <input type="radio" id="no"  name="cats">
+</p>
+<p>
+  <button type="submit" name="Submit">Submit</button>
+</p>
+</form>
     </main>
     <footer>
+      <hr>
         <article>&copy; Somebody, Somewhere, 2021</article>
     </footer>
   </body>
